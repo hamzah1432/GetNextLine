@@ -6,7 +6,7 @@
 /*   By: halmuhis <halmuhis@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/18 18:23:22 by halmuhis          #+#    #+#             */
-/*   Updated: 2025/02/18 19:59:28 by halmuhis         ###   ########.fr       */
+/*   Updated: 2025/02/19 13:48:55 by halmuhis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ typedef struct s_node
 {
 	char			str[BUFFER_SIZE];
 	struct s_node	*node;
+	int				fd;
 }	t_node;
 
 char	*get_next_line(int fd);
