@@ -1,16 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line_bonus.c                              :+:      :+:    :+:   */
+/*   • get_next_line_bonus.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: halmuhis <halmuhis@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/19 17:45:55 by halmuhis          #+#    #+#             */
-/*   Updated: 2025/02/19 17:46:51 by halmuhis         ###   ########.fr       */
+/*   Created: 2025/02/18 18:40:03 by halmuhis          #+#    #+#             */
+/*   Updated: 2025/02/19 18:09:13 by halmuhis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/get_next_line_bonus.h"
+#include "../include/get_next_line.h"
+
+size_t	ft_strlen(const char *str)
+{
+	size_t	len;
+
+	len = 0;
+	while (str[len] != '\0')
+		len++;
+	return (len);
+}
 
 static char	*set_line(char *line_buffer, char (*rem)[BUFFER_SIZE + 1])
 {

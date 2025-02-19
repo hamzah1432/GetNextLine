@@ -6,7 +6,7 @@
 /*   By: halmuhis <halmuhis@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/18 18:40:03 by halmuhis          #+#    #+#             */
-/*   Updated: 2025/02/19 17:35:27 by halmuhis         ###   ########.fr       */
+/*   Updated: 2025/02/19 18:11:32 by halmuhis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,19 +85,19 @@ char	*get_next_line(int fd)
 	return (set_line(line, &rem));
 }
 
-// #include <stdio.h>
-// int main ()
-// {
-// 	char *line;
-// 	int fd =  open("src/text.txt", O_RDONLY);
+#include <stdio.h>
+int main ()
+{
+	char *line;
+	int fd =  open("src/text.txt", O_RDONLY);
 
-// 	while ((line = get_next_line(fd)) != NULL)
-// 	{
-// 	// line = get_next_line(fd);
-// 	printf("%s", line);
-// 	free(line);
-// 	}
+	while ((line = get_next_line(fd)) != NULL)
+	{
+	// line = get_next_line(fd);
+	printf("%s", line);
+	free(line);
+	}
 
-// 	close(fd);
-// 	return(0);
-// }
+	close(fd);
+	return(0);
+}
