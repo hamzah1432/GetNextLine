@@ -81,7 +81,7 @@ cc -Wall -Wextra -Werror -D BUFFER_SIZE=10000000 src/get_next_line.c src/get_nex
 ## Author
 
 - **Hamza Almuhisen** - *42 Amman Student*
-  - GitHub: [@hamza1432](https://github.com/halmuhis)
+  - GitHub: [@hamzah1432](https://github.com/hamzah1432)
   - 42 Intra: [halmuhis](https://profile.intra.42.fr/)
 
 ## License
